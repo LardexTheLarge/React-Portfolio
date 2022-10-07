@@ -4,6 +4,7 @@ import Main from "./components/Main";
 import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
 import Resume from "./components/Resume";
+import Projects from "./components/Projects";
 
 function App() {
   let component;
@@ -12,10 +13,10 @@ function App() {
       component = <Main />;
       break;
     case "/projects":
-      // component = Projects;
+      component = <Projects />;
       break;
     case "/contact":
-      // component = ContactMe;
+      // component = <ContactMe/>;
       break;
     case "/resume":
       component = <Resume />;
