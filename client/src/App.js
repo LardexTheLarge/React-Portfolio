@@ -1,6 +1,6 @@
 import React from "react";
 // First we import our Hello component from our components folder.
-import Hello from "./components/Hello";
+import Main from "./components/Main";
 import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
 
@@ -10,7 +10,7 @@ function App() {
   return (
     <>
       <NavBar />
-      <Hello />
+      <Main />
       <Footer />
     </>
   );
