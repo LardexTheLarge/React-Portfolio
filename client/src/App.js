@@ -3,14 +3,28 @@ import React from "react";
 import Main from "./components/Main";
 import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
+import Resume from "./components/Resume";
 
-// React apps typically have a single App component at the very top that can reference other React components.
-// This component, `App`, is our main component that is importing `Hello` and rendering it in the return method.
 function App() {
+  let component;
+  switch (window.location.pathname) {
+    case "/":
+      component = <Main />;
+      break;
+    case "/projects":
+      // component = Projects;
+      break;
+    case "/contact":
+      // component = ContactMe;
+      break;
+    case "/resume":
+      component = <Resume />;
+      break;
+  }
   return (
     <>
       <NavBar />
-      <Main />
+      {component}
       <Footer />
     </>
   );
