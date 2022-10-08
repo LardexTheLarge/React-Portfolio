@@ -5,6 +5,7 @@ import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
 import Resume from "./components/Resume";
 import Projects from "./components/Projects";
+import ContactMe from "./components/ContactMe";
 
 function App() {
   let component;
@@ -16,7 +17,7 @@ function App() {
       component = <Projects />;
       break;
     case "/contact":
-      // component = <ContactMe/>;
+      component = <ContactMe />;
       break;
     case "/resume":
       component = <Resume />;
