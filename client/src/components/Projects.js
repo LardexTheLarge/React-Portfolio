@@ -1,110 +1,110 @@
 import React from "react";
 
-const styles = {
-  card: {
-    height: "500px",
+const proj = [
+  {
+    name: "F00000d",
+    description: "Using an API to make a nutrition tracking app.",
+    pic: "F00000d.png",
+    github: "https://github.com/LardexTheLarge/project1-group5",
+    link: "https://lardexthelarge.github.io/project1-group5/",
+    technology: [
+      { 1: "bootstrap" },
+      { 2: "edamam.com - API" },
+      { 3: "pexels.com - API" },
+      { 4: "JS" },
+    ],
   },
-};
+  {
+    name: "Five Guys",
+    description:
+      "An E commerce website to order menu items from other restaurants.",
+    pic: "five_guys.png",
+    github: "https://github.com/LardexTheLarge/Five-Guys",
+    link: "https://arcane-mesa-45752.herokuapp.com",
+    technology: [
+      { 1: "bcrypt" },
+      { 2: "stripe" },
+      { 3: "express" },
+      { 4: "handlebars" },
+      { 5: "mysql" },
+      { 6: "sequelize" },
+      { 7: "dotenv" },
+      { 8: "JS" },
+      { 9: "nodeJs" },
+    ],
+  },
+  {
+    name: "Movie Library",
+    description: "Movie library that stores movies in a database.",
+    pic: "movie-lib.png",
+    github: "https://github.com/LardexTheLarge/MovieLibrary",
+    link: "https://62b3793eedd09f2807a8dda0--brilliant-begonia-22bb67.netlify.app",
+    technology: [{ 1: "C#" }, { 2: "blazor" }],
+  },
+  {
+    name: "Note Taker",
+    description: "Take notes and have them be saved by a database.",
+    pic: "Note-Taker.PNG",
+    github: "https://github.com/LardexTheLarge/Note-Taker",
+    link: "https://shielded-fortress-29538.herokuapp.com",
+    technology: [],
+  },
+  {
+    name: "Social Media Back End",
+    description:
+      "A back end for a social media website using MongoDB and mongoose.",
+    pic: "Social-media-api.PNG",
+    github: "https://github.com/LardexTheLarge/Social-Network-API",
+    technology: [],
+  },
+  {
+    name: "Weather Forecast App",
+    description: "Weather forecast using local storage and a weather API.",
+    pic: "weather-app.PNG",
+    github: "https://github.com/LardexTheLarge/Weather-Dashboard",
+    link: "https://lardexthelarge.github.io/Weather-Dashboard/",
+    technology: [],
+  },
+];
 
 function Projects() {
   return (
-    <div>
-      <div
-        id="carouselExampleCaptions"
-        className="carousel carousel-dark slide"
-        data-bs-ride="false"
-      >
-        <div className="carousel-indicators">
-          <button
-            type="button"
-            data-bs-target="#carouselExampleCaptions"
-            data-bs-slide-to="0"
-            className="active"
-            aria-current="true"
-            aria-label="Slide 1"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleCaptions"
-            data-bs-slide-to="1"
-            aria-label="Slide 2"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleCaptions"
-            data-bs-slide-to="2"
-            aria-label="Slide 3"
-          ></button>
-        </div>
-        <div className="carousel-inner">
-          <div className="carousel-item active">
+    <div className="row row-cols-1 row-cols-md-2 m-3 g-4">
+      {proj.map((projects) => (
+        <div className="col">
+          <div className="card">
             <img
-              src="movie-lib.png"
-              className=" d-block w-100"
-              style={styles.card}
-              alt="movie library"
+              src={projects.pic}
+              className="card-img-top"
+              alt={projects.description}
             />
-            <div className="carousel-caption d-none d-md-block">
-              <h5>First slide label</h5>
-              <p>
-                Some representative placeholder content for the first slide.
-              </p>
-            </div>
-          </div>
-          <div className="carousel-item">
-            <img
-              src="five_guys.png"
-              className="d-block w-100"
-              style={styles.card}
-              alt="Five Guys E-commerce"
-            />
-            <div className="carousel-caption d-none d-md-block">
-              <h5>Second slide label</h5>
-              <p>
-                Some representative placeholder content for the second slide.
-              </p>
-            </div>
-          </div>
-          <div className="carousel-item">
-            <img
-              src="F00000d.png"
-              className=" d-block w-100"
-              style={styles.card}
-              alt="Food app to track nutrition"
-            />
-            <div className="carousel-caption d-none d-md-block">
-              <h5>Third slide label</h5>
-              <p>
-                Some representative placeholder content for the third slide.
-              </p>
+            <div className="card-body">
+              <h5 className="card-title">{projects.name}</h5>
+              <p className="card-text">{projects.description}</p>
+              <a
+                href={projects.github}
+                target="_blank"
+                className="btn btn-primary"
+                rel="noreferrer"
+              >
+                GitHub Repo
+              </a>
+              {projects.link ? (
+                <a
+                  href={projects.link}
+                  target="_blank"
+                  className="btn btn-primary ms-1"
+                  rel="noreferrer"
+                >
+                  Web Page
+                </a>
+              ) : (
+                <a></a>
+              )}
             </div>
           </div>
         </div>
-        <button
-          className="carousel-control-prev"
-          type="button"
-          data-bs-target="#carouselExampleCaptions"
-          data-bs-slide="prev"
-        >
-          <span
-            className="carousel-control-prev-icon"
-            aria-hidden="true"
-          ></span>
-          <span className="visually-hidden">Previous</span>
-        </button>
-        <button
-          className="carousel-control-next"
-          type="button"
-          data-bs-target="#carouselExampleCaptions"
-          data-bs-slide="next"
-        >
-          <span
-            className="carousel-control-next-icon"
-            aria-hidden="true"
-          ></span>
-          <span className="visually-hidden">Next</span>
-        </button>
-      </div>
+      ))}
     </div>
   );
 }
