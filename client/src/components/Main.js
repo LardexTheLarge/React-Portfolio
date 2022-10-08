@@ -2,7 +2,7 @@ import React from "react";
 
 function Main() {
   return (
-    <div className="container">
+    <div className="container d-flex flex-column min-vh-100">
       <h2 className="m-3 text-center">About Me</h2>
       <div className="bg-dark text-light m-3 rounded">
         <div className="row g-0">
