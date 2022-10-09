@@ -72,7 +72,7 @@ function Projects() {
     <div className="row row-cols-1 row-cols-md-2 m-3 g-4">
       {proj.map((projects) => (
         <div className="col">
-          <div className="card">
+          <div className="card bg-dark text-light">
             <img
               src={projects.pic}
               className="card-img-top"

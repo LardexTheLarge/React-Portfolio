@@ -23,17 +23,26 @@ export default function ContactMe() {
       );
   }
   return (
-    <div className="container text-center d-flex flex-column min-vh-100">
-      <form className="contact-form" onSubmit={sendEmail}>
-        <input type="hidden" name="contact_number" />
-        <label>Name</label>
-        <input type="text" name="from_name" />
-        <label>Email</label>
-        <input type="email" name="reply_to_email" />
-        <label>Message</label>
-        <textarea name="message" />
-        <input type="submit" value="Send" />
-      </form>
+    <div className="d-flex flex-column min-vh-100">
+      <div className="container py-4">
+        <form
+          className="contactForm bg-dark text-light rounded p-3"
+          onSubmit={sendEmail}
+        >
+          <input type="hidden" name="contact_number" />
+          <label className="form-label">Name</label>
+          <input className="form-control" type="text" name="from_name" />
+          <label className="form-label">Email</label>
+          <input className="form-control" type="email" name="reply_to_email" />
+          <label className="form-label">Message</label>
+          <textarea className="form-control" name="message" />
+          <input
+            className="btn mt-2 bg-primary text-light rounded"
+            type="submit"
+            value="Send"
+          />
+        </form>
+      </div>
     </div>
   );
 }
