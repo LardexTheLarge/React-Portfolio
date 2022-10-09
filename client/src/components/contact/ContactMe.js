@@ -26,21 +26,44 @@ export default function ContactMe() {
     <div className="d-flex flex-column min-vh-100">
       <div className="container py-4">
         <form
-          className="contactForm bg-dark text-light rounded p-3"
+          className="contactForm needs-validation bg-dark text-light rounded p-3"
           onSubmit={sendEmail}
         >
           <input type="hidden" name="contact_number" />
           <label className="form-label">Name</label>
-          <input className="form-control" type="text" name="from_name" />
-          <label className="form-label">Email</label>
-          <input className="form-control" type="email" name="reply_to_email" />
-          <label className="form-label">Message</label>
-          <textarea className="form-control" name="message" />
           <input
+            className="form-control"
+            type="text"
+            name="from_name"
+            placeholder="Name"
+            required
+            id="name"
+          />
+          <label className="form-label">Email</label>
+          <input
+            className="form-control"
+            type="email"
+            name="reply_to_email"
+            placeholder="email@email.com"
+            required
+            id="emailAddress"
+          />
+          <label htmlFor="validationTextarea" className="form-label">
+            Message
+          </label>
+          <textarea
+            className="form-control"
+            name="message"
+            required
+            placeholder="Message"
+            id="validationTextarea"
+          />
+          <button
             className="btn mt-2 bg-primary text-light rounded"
             type="submit"
-            value="Send"
-          />
+          >
+            Send
+          </button>
         </form>
       </div>
     </div>
