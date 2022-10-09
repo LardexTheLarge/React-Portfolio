@@ -5,7 +5,7 @@ import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
 import Resume from "./components/Resume";
 import Projects from "./components/Projects";
-import ContactMe from "./components/ContactMe";
+import ContactMe from "./components/contact/ContactMe";
 
 function App() {
   let component;
