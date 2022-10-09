@@ -9,8 +9,9 @@ const style = {
 function Resume() {
   return (
     <div className="mt-3 d-flex flex-column min-vh-100">
+      <h2 className=" text-center">Resume</h2>
       <div className="container">
-        <ul class="text-center list-group">
+        <ul className="text-center list-group">
           <a
             className="list-group-item bg-dark text-light list-group-item-action"
             href="Resume.pdf"

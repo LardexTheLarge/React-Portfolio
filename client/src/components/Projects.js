@@ -69,43 +69,46 @@ const proj = [
 
 function Projects() {
   return (
-    <div className="row row-cols-1 row-cols-md-2 m-3 g-4">
-      {proj.map((projects) => (
-        <div className="col">
-          <div className="card bg-dark text-light">
-            <img
-              src={projects.pic}
-              className="card-img-top"
-              alt={projects.description}
-            />
-            <div className="card-body">
-              <h5 className="card-title">{projects.name}</h5>
-              <p className="card-text">{projects.description}</p>
-              <a
-                href={projects.github}
-                target="_blank"
-                className="btn btn-primary"
-                rel="noreferrer"
-              >
-                GitHub Repo
-              </a>
-              {projects.link ? (
+    <>
+      <h2 className="m-3 text-center">Projects</h2>
+      <div className="row row-cols-1 row-cols-md-2 m-3 g-4">
+        {proj.map((projects) => (
+          <div className="col">
+            <div className="card bg-dark text-light">
+              <img
+                src={projects.pic}
+                className="card-img-top"
+                alt={projects.description}
+              />
+              <div className="card-body">
+                <h5 className="card-title">{projects.name}</h5>
+                <p className="card-text">{projects.description}</p>
                 <a
-                  href={projects.link}
+                  href={projects.github}
                   target="_blank"
-                  className="btn btn-primary ms-1"
+                  className="btn btn-primary"
                   rel="noreferrer"
                 >
-                  Web Page
+                  GitHub Repo
                 </a>
-              ) : (
-                <a></a>
-              )}
+                {projects.link ? (
+                  <a
+                    href={projects.link}
+                    target="_blank"
+                    className="btn btn-primary ms-1"
+                    rel="noreferrer"
+                  >
+                    Web Page
+                  </a>
+                ) : (
+                  <a></a>
+                )}
+              </div>
             </div>
           </div>
-        </div>
-      ))}
-    </div>
+        ))}
+      </div>
+    </>
   );
 }
 

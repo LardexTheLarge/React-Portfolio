@@ -1,43 +1,45 @@
 import React from "react";
+import Navbar from "react-bootstrap/Navbar";
+import { Link } from "react-router-dom";
+
+<button
+  aria-controls="basic-navbar-nav"
+  type="button"
+  aria-label="Toggle navigation"
+  class="navbar-toggler"
+>
+  <span class="navbar-toggler-icon"></span>
+</button>;
+
 function NavBar() {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
       <div className="container-fluid">
-        <a className="navbar-brand" href="/">
+        <Link className="navbar-brand" to="/">
           Gabriel Vasquez
-        </a>
-        <button
-          className="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span className="navbar-toggler-icon"></span>
-        </button>
-        <div className="collapse navbar-collapse" id="navbarNav">
+        </Link>
+
+        <div className=" navbar-collapse" id="navbarNav">
           <ul className="navbar-nav">
             <li className="nav-item">
-              <a className="nav-link" aria-current="page" href="/">
+              <Link className="nav-link" aria-current="page" to="/">
                 About Me
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="/projects">
+              <Link className="nav-link" to="/projects">
                 Projects
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="/contact">
+              <Link className="nav-link" to="/contact">
                 Contact Me
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="/resume">
+              <Link className="nav-link" to="/resume">
                 Resume
-              </a>
+              </Link>
             </li>
           </ul>
         </div>

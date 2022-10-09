@@ -24,9 +24,10 @@ export default function ContactMe() {
   }
   return (
     <div className="d-flex flex-column min-vh-100">
+      <h2 className="m-3 text-center">Contact Me</h2>
       <div className="container py-4">
         <form
-          className="contactForm needs-validation bg-dark text-light rounded p-3"
+          className="contactForm was-validated bg-dark text-light rounded p-3"
           onSubmit={sendEmail}
         >
           <input type="hidden" name="contact_number" />
