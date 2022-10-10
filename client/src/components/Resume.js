@@ -22,7 +22,7 @@ function Resume() {
           <object
             className="list-group-item bg-dark"
             style={style.object}
-            data="Resume.pdf"
+            data="./React-Portfolio/Resume.pdf"
           ></object>
         </ul>
       </div>

@@ -76,7 +76,7 @@ function Projects() {
           <div className="col">
             <div className="card bg-dark text-light">
               <img
-                src={projects.pic}
+                src={`./React-Portfolio/${projects.pic}`}
                 className="card-img-top"
                 alt={projects.description}
               />

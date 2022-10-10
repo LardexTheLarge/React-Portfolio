@@ -7,7 +7,11 @@ function Main() {
       <div className="bg-dark text-light m-3 rounded">
         <div className="row g-0">
           <div className="col-md-4">
-            <img src="logo192.png" className="m-3 rounded" alt="profile pic" />
+            <img
+              src="./React-Portfolio/logo192.png"
+              className="m-3 rounded"
+              alt="profile pic"
+            />
           </div>
           <div className="col-md-8">
             <div className="card-body">
