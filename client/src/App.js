@@ -9,21 +9,6 @@ import ContactMe from "./components/contact/ContactMe";
 import { Route, Routes } from "react-router-dom";
 
 function App() {
-  // let component;
-  // switch (window.location.pathname) {
-  //   case "/":
-  //     component = <Main />;
-  //     break;
-  //   case "/projects":
-  //     component = <Projects />;
-  //     break;
-  //   case "/contact":
-  //     component = <ContactMe />;
-  //     break;
-  //   case "/resume":
-  //     component = <Resume />;
-  //     break;
-  // }
   return (
     <>
       <NavBar />
