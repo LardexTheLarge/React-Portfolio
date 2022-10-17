@@ -14,7 +14,7 @@ function Resume() {
         <ul className="text-center list-group">
           <a
             className="list-group-item bg-dark text-light list-group-item-action"
-            href="Resume.pdf"
+            href="Resume v3.pdf"
             download
           >
             Download Resume Here
@@ -22,7 +22,7 @@ function Resume() {
           <object
             className="list-group-item bg-dark"
             style={style.object}
-            data="./React-Portfolio/Resume.pdf"
+            data="./React-Portfolio/Resume v3.pdf"
           ></object>
         </ul>
       </div>

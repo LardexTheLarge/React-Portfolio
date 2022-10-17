@@ -2,6 +2,15 @@ import React from "react";
 
 const proj = [
   {
+    name: "Trip expense tracker",
+    description:
+      "An app that tracks a group of users going on a trip and what they spent on the trip, this was made with React and MongoDB",
+    pic: "TripSplit.PNG",
+    github: "https://github.com/LardexTheLarge/trip_split",
+    link: "https://trip-split-atoz.herokuapp.com",
+    technology: [],
+  },
+  {
     name: "F00000d",
     description: "Using an API to make a nutrition tracking app.",
     pic: "F00000d.png",
@@ -17,7 +26,7 @@ const proj = [
   {
     name: "Five Guys",
     description:
-      "An E commerce website to order menu items from other restaurants.",
+      "An E commerce website to order menu items from other restaurants using mysql and sequelize.",
     pic: "five_guys.png",
     github: "https://github.com/LardexTheLarge/Five-Guys",
     link: "https://arcane-mesa-45752.herokuapp.com",
@@ -35,7 +44,8 @@ const proj = [
   },
   {
     name: "Movie Library",
-    description: "Movie library that stores movies in a database.",
+    description:
+      "Movie library that stores movies in a database using C# and AirTable.",
     pic: "movie-lib.png",
     github: "https://github.com/LardexTheLarge/MovieLibrary",
     link: "https://62b3793eedd09f2807a8dda0--brilliant-begonia-22bb67.netlify.app",
