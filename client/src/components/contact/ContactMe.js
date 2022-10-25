@@ -67,6 +67,7 @@ export default function ContactMe() {
           </button>
         </form>
       </div>
+      <h2 className="m-3 text-center">0gabevee0@gmail.com</h2>
     </div>
   );
 }
