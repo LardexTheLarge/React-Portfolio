@@ -8,7 +8,7 @@ const proj = [
     pic: "TripSplit.PNG",
     github: "https://github.com/LardexTheLarge/trip_split",
     link: "https://trip-split-atoz.herokuapp.com",
-    technology: [],
+    technology: ["NodeJs", "MongoDB", "Mongoose", "Express", "React"],
   },
   {
     name: "F00000d",
@@ -16,12 +16,7 @@ const proj = [
     pic: "F00000d.png",
     github: "https://github.com/LardexTheLarge/project1-group5",
     link: "https://lardexthelarge.github.io/project1-group5/",
-    technology: [
-      { 1: "bootstrap" },
-      { 2: "edamam.com - API" },
-      { 3: "pexels.com - API" },
-      { 4: "JS" },
-    ],
+    technology: ["bootstrap", "edamam.com - API", "pexels.com - API", "JS"],
   },
   {
     name: "Five Guys",
@@ -31,15 +26,13 @@ const proj = [
     github: "https://github.com/LardexTheLarge/Five-Guys",
     link: "https://arcane-mesa-45752.herokuapp.com",
     technology: [
-      { 1: "bcrypt" },
-      { 2: "stripe" },
-      { 3: "express" },
-      { 4: "handlebars" },
-      { 5: "mysql" },
-      { 6: "sequelize" },
-      { 7: "dotenv" },
-      { 8: "JS" },
-      { 9: "nodeJs" },
+      "bcrypt",
+      "stripe",
+      "express",
+      "handlebars",
+      "mysql",
+      "sequelize",
+      "NodeJs",
     ],
   },
   {
@@ -49,7 +42,7 @@ const proj = [
     pic: "movie-lib.png",
     github: "https://github.com/LardexTheLarge/MovieLibrary",
     link: "https://62b3793eedd09f2807a8dda0--brilliant-begonia-22bb67.netlify.app",
-    technology: [{ 1: "C#" }, { 2: "blazor" }],
+    technology: ["C#", "blazor"],
   },
   {
     name: "Note Taker",
@@ -57,7 +50,7 @@ const proj = [
     pic: "Note-Taker.PNG",
     github: "https://github.com/LardexTheLarge/Note-Taker",
     link: "https://shielded-fortress-29538.herokuapp.com",
-    technology: [],
+    technology: ["JavaScript", "NodeJS", "Express"],
   },
   {
     name: "Social Media Back End",
@@ -65,15 +58,16 @@ const proj = [
       "A back end for a social media website using MongoDB and mongoose.",
     pic: "Social-media-api.PNG",
     github: "https://github.com/LardexTheLarge/Social-Network-API",
-    technology: [],
+    technology: ["NodeJS", "Mongoose", "MongoDB", "Express", "dayjs"],
   },
   {
     name: "Weather Forecast App",
-    description: "Weather forecast using local storage and a weather API.",
+    description:
+      "Weather forecast using local storage and a weather API using .",
     pic: "weather-app.PNG",
     github: "https://github.com/LardexTheLarge/Weather-Dashboard",
     link: "https://lardexthelarge.github.io/Weather-Dashboard/",
-    technology: [],
+    technology: ["JavaScript", "Weatherbit.io - API"],
   },
 ];
 
@@ -90,9 +84,17 @@ function Projects() {
                 className="card-img-top"
                 alt={projects.description}
               />
+
               <div className="card-body">
                 <h5 className="card-title">{projects.name}</h5>
                 <p className="card-text">{projects.description}</p>
+                <ul className="list-group list-group-flush rounded my-2 ">
+                  {projects.technology.map((tech) => (
+                    <li className="list-group-item bg-dark text-light">
+                      {tech}
+                    </li>
+                  ))}
+                </ul>
                 <a
                   href={projects.github}
                   target="_blank"

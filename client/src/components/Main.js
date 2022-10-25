@@ -31,26 +31,26 @@ function Main() {
             </div>
           </div>
         </div>
-        <div class="card m-3 bg-secondary bg-gradient">
-          <h5 class="card-header">Skills & Tech</h5>
-          <div class="card-body">
-            <h5 class="card-title">Front-end</h5>
-            <ul class="list-group list-group-flush rounded">
-              <li class="list-group-item bg-dark text-light">JavaScript</li>
-              <li class="list-group-item bg-dark text-light">HTML</li>
-              <li class="list-group-item bg-dark text-light">CSS</li>
-              <li class="list-group-item bg-dark text-light">HandleBars</li>
-              <li class="list-group-item bg-dark text-light">BootStrap</li>
-              <li class="list-group-item bg-dark text-light">React</li>
+        <div className="card m-3 bg-secondary bg-gradient">
+          <h5 className="card-header">Skills & Tech</h5>
+          <div className="card-body">
+            <h5 className="card-title">Front-end</h5>
+            <ul className="list-group list-group-flush rounded">
+              <li className="list-group-item bg-dark text-light">JavaScript</li>
+              <li className="list-group-item bg-dark text-light">HTML</li>
+              <li className="list-group-item bg-dark text-light">CSS</li>
+              <li className="list-group-item bg-dark text-light">HandleBars</li>
+              <li className="list-group-item bg-dark text-light">BootStrap</li>
+              <li className="list-group-item bg-dark text-light">React</li>
             </ul>
-            <h5 class="card-title my-2">Back-end</h5>
-            <ul class="list-group list-group-flush rounded">
-              <li class="list-group-item bg-dark text-light">MongoDB</li>
-              <li class="list-group-item bg-dark text-light">Mongoose</li>
-              <li class="list-group-item bg-dark text-light">ExpressJS</li>
-              <li class="list-group-item bg-dark text-light">MySQL</li>
-              <li class="list-group-item bg-dark text-light">Sequelize</li>
-              <li class="list-group-item bg-dark text-light">NodeJS</li>
+            <h5 className="card-title my-2">Back-end</h5>
+            <ul className="list-group list-group-flush rounded">
+              <li className="list-group-item bg-dark text-light">MongoDB</li>
+              <li className="list-group-item bg-dark text-light">Mongoose</li>
+              <li className="list-group-item bg-dark text-light">ExpressJS</li>
+              <li className="list-group-item bg-dark text-light">MySQL</li>
+              <li className="list-group-item bg-dark text-light">Sequelize</li>
+              <li className="list-group-item bg-dark text-light">NodeJS</li>
             </ul>
           </div>
         </div>
