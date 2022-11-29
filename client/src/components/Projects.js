@@ -2,6 +2,23 @@ import React from "react";
 
 const proj = [
   {
+    name: "ChatBox",
+    description: "A fully developed MERN stack messaging app.",
+    pic: "ChatBox.PNG",
+    github: "https://github.com/LardexTheLarge/Messaging-App",
+    link: "https://mighty-eyrie-69947.herokuapp.com",
+    technology: [
+      "NodeJs",
+      "MongoDB",
+      "Mongoose",
+      "Express",
+      "React",
+      "Socket.io",
+      "JWT",
+      "Bcrytpt",
+    ],
+  },
+  {
     name: "Trip expense tracker",
     description:
       "An app that tracks a group of users going on a trip and what they spent on the trip, this was made with React and MongoDB",
